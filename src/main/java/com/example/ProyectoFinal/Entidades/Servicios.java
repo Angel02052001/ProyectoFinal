@@ -16,9 +16,23 @@ public class Servicios {
     private String descripcion;
     private double precio;
     private String imagen;
+    private String nombreArchivo;
+    private String rutaArchivo;
 
     public Servicios() {
     }
+
+    public Servicios(int id, String nombre, String descripcion, double precio, String imagen, String nombreArchivo, String rutaArchivo) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precio = precio;
+        this.imagen = imagen;
+        this.nombreArchivo = nombreArchivo;
+        this.rutaArchivo = rutaArchivo;
+    }
+
+    // Getters y Setters
 
     public int getId() {
         return id;
@@ -58,5 +72,21 @@ public class Servicios {
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+
+    public String getNombreArchivo() {
+        return nombreArchivo;
+    }
+
+    public void setNombreArchivo(String nombreArchivo) {
+        this.nombreArchivo = nombreArchivo;
+    }
+
+    public String getRutaArchivo() {
+        return rutaArchivo;
+    }
+
+    public void setRutaArchivo(String rutaArchivo) {
+        this.rutaArchivo = rutaArchivo;
     }
 }
