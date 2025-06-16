@@ -22,7 +22,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/api/carrusel")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200") local
+@CrossOrigin(origins = "https://proyectoweb-63512.web.app")
 public class CarruselControlador {
      @Autowired
     private CarruselService carruselService;

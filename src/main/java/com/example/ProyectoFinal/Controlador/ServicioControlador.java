@@ -17,7 +17,9 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/servicios")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://proyectoweb-63512.web.app")
+
 public class ServicioControlador {
 
     @Autowired

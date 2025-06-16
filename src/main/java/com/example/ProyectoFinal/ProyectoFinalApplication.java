@@ -19,7 +19,9 @@ public class ProyectoFinalApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Aplica a todos los endpoints
-                        .allowedOrigins("http://localhost:4200") // Tu frontend de Angular
+                        //.allowedOrigins("http://localhost:4200") // Tu frontend de Angular local
+                        .allowedOrigins("https://proyectoweb-63512.web.app") // Tu frontend de Angular
+
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("Origin", "Content-Type", "Authorization")
                         .allowCredentials(true);
