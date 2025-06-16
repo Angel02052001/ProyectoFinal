@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/usuarios")
 //@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin(origins = "https://proyectoweb-63512.web.app")
-
 public class UsuarioControlador {
     @Autowired
     private UsuarioService usuarioService;
