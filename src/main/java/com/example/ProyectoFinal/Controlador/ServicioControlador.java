@@ -79,7 +79,7 @@ public class ServicioControlador {
             List<Servicios> respuesta = new ArrayList<>();
 
             for (Servicios s : servicios) {
-                String urlImagen = "http://localhost:8080/api/servicios/imagen/" + s.getNombreArchivo();
+                String urlImagen = "https://proyectofinal-rbki.onrender.com/api/servicios/imagen/" + s.getNombreArchivo();
 
                 Servicios nuevo = new Servicios(
                         s.getId(),

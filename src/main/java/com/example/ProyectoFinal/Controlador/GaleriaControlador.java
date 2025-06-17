@@ -83,7 +83,7 @@ public class GaleriaControlador {
             List<Galeria> respuesta = new ArrayList<>();
 
             for (Galeria g : galeriaList) {
-                String urlImagen = "http://localhost:8080/api/galeria/imagen/" + g.getNombreArchivo();
+                String urlImagen = "https://proyectofinal-rbki.onrender.com/api/galeria/imagen/" + g.getNombreArchivo();
 
                 Galeria nueva = new Galeria(
                         g.getId(),
