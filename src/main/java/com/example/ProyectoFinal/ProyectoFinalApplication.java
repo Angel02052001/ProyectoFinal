@@ -23,7 +23,7 @@ public class ProyectoFinalApplication {
                         .allowedOrigins("https://proyectoweb-63512.web.app") // Tu frontend de Angular
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("Origin", "Content-Type", "Authorization")
-                        .allowCredentials(true);
+                        .allowCredentials(false);
             }
         };
     }
