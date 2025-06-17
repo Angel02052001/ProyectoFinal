@@ -96,8 +96,9 @@ public ResponseEntity<List<Carrusel>> conImagenes() {
 
         for (Carrusel carrusel : carruseles) {
             // Construir URL completa para acceder a la imagen
-            String urlImagen = "https://proyectofinal-rbki.onrender.com/api/carrusel/imagen/" + carrusel.getNombreArchivo();
-            
+            //String urlImagen = "https://proyectofinal-rbki.onrender.com/api/carrusel/imagen/" + carrusel.getNombreArchivo();
+            String urlImagen = "https://proyectofinal-rbki.onrender.com/uploads/" + carrusel.getNombreArchivo();
+
             Carrusel nuevoCarrusel = new Carrusel(
                     carrusel.getId(),
                     carrusel.getDescripcion(),
